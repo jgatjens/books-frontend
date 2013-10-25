@@ -1,0 +1,8 @@
+node_modules
+*.DS_Store
+js/vendor
+doc
+bower_components
+.sass-cache
+test.html
+img/sprite-*
