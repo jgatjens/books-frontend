@@ -68,4 +68,4 @@ En este segundo sprint vamos a investigar como crear los test contra el backend 
 
 El documento de tech ha sido actualizado con los routers, tambien pueden revisar el codigo del proyecto de backend (routes folder).
 
-Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos ya sea contra el backend, funciones, objetos, etc.
+Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear.
