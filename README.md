@@ -33,13 +33,13 @@ Instalación del frontend
 
 ```sh
 # clone repo
-git clone [git-repo-url] backend
+git clone [git-repo-url] 
 # instalar dependencias del frontend
 bower install  
-# instalar dependencias node nodejs
+# instalar dependencias de nodejs
 npm install
 
-# Correr el app
+# Correr app
 grunt server
 ```
 
@@ -59,7 +59,7 @@ grunt server
 ## Frontend - Sprint 2 ( viernes 08 de Noviembre ) 
 Antes de empezar con los demas objetivos deberan crear un tag en el repositorio llamado "sprint-1" ej:
     ```sh
-	git tag sprint-1 -m 'comment'
+    git tag sprint-1 -m 'comment'
 	git push --tags #sube los cambios al branch remoto (github)	
 	```
 	# esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
