@@ -3,3 +3,4 @@ node_modules
 js/vendor
 doc
 .sass-cache
+test.html
