@@ -66,7 +66,9 @@ Esto con el fin de poder devolverse al codigo con facilidad para hacer code revi
 
 En este segundo sprint vamos a investigar como crear browser test contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
 
-Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear. 
+Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 5 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear. Si el framework que escogen esta como componente de bower, deberan incluirlo como parte de las dependencias de desarrollo del projecto.
 
-Si el framework que escogen esta como componente de bower, deberan incluirlo como parte de las dependencias de desarrollo del projecto.
+
+
+
 
