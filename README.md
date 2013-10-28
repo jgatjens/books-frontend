@@ -58,19 +58,14 @@ grunt server
 
 ## Frontend - Sprint 2 ( viernes 08 de Noviembre ) 
 Antes de empezar con los demas objetivos deberan crear un tag en el repositorio llamado "sprint-1" ej:
-    ```sh
-    git tag sprint-1 -m 'comment'
-	git push --tags #sube los cambios al branch remoto (github)	
-	```
-	# esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
+```sh
+git tag sprint-1 -m 'comment'
+git push --tags #sube los cambios al branch remoto (github)	
+```
+Esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
 
 En este segundo sprint vamos a investigar como crear los test contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
 
 El documento de tech ha sido actualizado con los routers, tambien pueden revisar el codigo del proyecto de backend (routes folder).
 
 Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos ya sea contra el backend, funciones, objetos, etc.
-
-
-
-
-    
