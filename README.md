@@ -43,7 +43,7 @@ npm install
 grunt server
 ```
 
-## Frontend - Sprint 1 ( viernes 25 de octubre ) 
+## Frontend - Sprint 1 ( viernes 01 de octubre ) 
 - crear repositorio para el frontend en su cuenta de github
 - instalar nodejs
 - usar estructura de archivos igual a la de boilerplate
@@ -64,8 +64,9 @@ git push --tags #sube los cambios al branch remoto (github)
 ```
 Esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
 
-En este segundo sprint vamos a investigar como crear los test contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
+En este segundo sprint vamos a investigar como crear browser test contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
 
-El documento de tech ha sido actualizado con los routers, tambien pueden revisar el codigo del proyecto de backend (routes folder).
+Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear. 
 
-Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 10 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear.
+Si el framework que escogen esta como componente de bower, deberan incluirlo como parte de las dependencias de desarrollo del projecto.
+
