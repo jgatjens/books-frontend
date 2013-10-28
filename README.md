@@ -64,9 +64,16 @@ git push --tags #sube los cambios al branch remoto (github)
 ```
 Esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
 
-En este segundo sprint vamos a investigar como crear browser test contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
+En este segundo sprint vamos a investigar como crear browser tests contra el backend (restful). El framework a usar es libre. EJ: mocha, jasmine, qunit, etc.
 
-Lo que se espera para este sprint es que investiguen a cerca de los frameworks para testear javascript y una ves hayan elegido uno hagan un minimo de 5 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear. Si el framework que escogen esta como componente de bower, deberan incluirlo como parte de las dependencias de desarrollo del projecto.
+Lo que se espera para este sprint es que investiguen acerca de los frameworks para testear javascript y una vez hayan elegido uno hagan un minimo de 5 ejemplos. Estos pueden ser contra el backend o cualquier codigo que ustedes quieran testear. Si el framework que escogen esta como componente de bower, deberan incluirlo como parte de las dependencias de desarrollo del projecto.
+
+#### Tareas 
+- crear tag.
+- crear una tarea de grunt para correr los test.
+- crear minimo 5 ejemplos con el framework escogido.
+
+
 
 
 
