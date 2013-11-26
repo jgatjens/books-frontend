@@ -4,3 +4,4 @@ js/vendor
 doc
 .sass-cache
 test.html
+img/sprite-*

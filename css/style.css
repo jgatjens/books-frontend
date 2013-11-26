@@ -1,3 +1,39 @@
+/* 
+	Compass sprite ejemplo.
+	La configuracion de compass se puede encontrar en el archivo
+	de Grunt (Gruntfile) en la seccion compass.options.
+	
+	si necesitan configurar algo mas pueden revisar el plugin de grunt
+	https://github.com/gruntjs/grunt-contrib-compass
+
+*/
+/* line 58, sprite/*.png */
+.sprite-sprite, .sprite-arrow-blue, .sprite-arrow-white, .sprite-logo {
+  background: url('/img/sprite-s0390d02d82.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite-arrow-blue {
+  background-position: 0 0;
+  height: 45px;
+  width: 34px;
+}
+
+/* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite-arrow-white {
+  background-position: 0 -298px;
+  height: 46px;
+  width: 34px;
+}
+
+/* line 60, ../../../../../../../.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.sprite-logo {
+  background-position: 0 -45px;
+  height: 253px;
+  width: 217px;
+}
+
+/* line 15, ../scss/style.scss */
 body {
-  background-color: white;
+  background-color: black;
 }

@@ -1,4 +1,17 @@
 // @import "normalize";
+
+/* 
+	Compass sprite ejemplo.
+	La configuracion de compass se puede encontrar en el archivo
+	de Grunt (Gruntfile) en la seccion compass.options.
+	
+	si necesitan configurar algo mas pueden revisar el plugin de grunt
+	https://github.com/gruntjs/grunt-contrib-compass
+
+*/
+
+@import "sprites";
+
 body {
 	background-color: black;
 }

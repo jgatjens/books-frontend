@@ -68,11 +68,12 @@ module.exports = function(grunt) {
             httpImagesPath: '/img',
             httpGeneratedImagesPath: '/img',
             httpFontsPath: '/css/fonts',
-            relativeAssets: false
+            relativeAssets: false,
+            noLineComments: false
         },
         server: {
             options: {
-                debugInfo: true
+              debugInfo: false
             }
         }
     },

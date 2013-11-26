@@ -6,6 +6,11 @@
   "directories": {
     "doc": "doc"
   },
+  "contributors": ["Jairo Gätjens"],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jgatjens/books-frontend.git"
+  },
   "dependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-connect": "~0.5.0",
