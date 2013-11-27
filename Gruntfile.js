@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 var LIVERELOAD_PORT = 35729;
 var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
 var mountFolder = function (connect, dir) {
@@ -21,6 +21,10 @@ module.exports = function(grunt) {
         compass: {
             files: ['scss/{,*/}*.{scss,sass}'],
             tasks: ['compass:server']
+        },
+        less: {
+            files: ['less/{,*/}*.less'],
+            tasks: ['less:dev']
         },
         livereload: {
             options: {
@@ -77,31 +81,54 @@ module.exports = function(grunt) {
             }
         }
     },
+    less: {
+      dev: {
+        options: {
+          paths: ["img"]
+        },
+        files: {
+          "css/style.css": "less/style.less"
+        }
+      },
+      prod: {
+        options: {
+          paths: ["img"],
+          cleancss: true
+        },
+        files: {
+          "css/style.css": "less/style.less"
+        }
+      }
+    },
     concurrent: {
-        server: ['compass:server']
+        compass: ['compass:server'],
+        less: ['less:dev']
     }
   });
 
   // These plugins provide necessary tasks.
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-concurrent');
   grunt.loadNpmTasks("grunt-open");
 
 
-  grunt.registerTask('server', function (target) {
-        grunt.task.run([
-            // 'clean:server',
-            // 'autoprefixer',
-            'concurrent:server',
-            'connect:livereload',
-            'open',
-            'watch'
-        ]);
-    });
+  // grunt server --css=less
+  // this will compile less instead of default compass.
+  var preprocessor = grunt.option('css') || 'compass';
 
-  // Default task.
-  // grunt.registerTask('default', ['concurrent:server', 'connect:livereload', 'open', 'watch']);
+  grunt.registerTask('server', function (target) {
+
+    grunt.task.run([
+        // 'clean:server',
+        // 'autoprefixer',
+        'concurrent:' + preprocessor,
+        'connect:livereload',
+        'open',
+        'watch'
+    ]);
+  });
 
 };
