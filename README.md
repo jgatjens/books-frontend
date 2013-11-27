@@ -133,3 +133,24 @@ DELETE '/api/books/:id'
 Si tienen alguna pregunta de cualquier indole por favor hacerla.. nos ayuda a todos que tengan dudas y consultas que hacer. La idea de estos sprint es evacuar todas las dudas posibles y asi en un futuro tener soluciones rapidas asi que no se guarden ninguna preguntada o comentario valido. 
 
 
+## Frontend - Sprint 4 ( viernes 06 de Diciembre ) 
+
+Antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-3" ej:
+```sh
+git tag sprint-3 -m 'ej: testing backend api mocha'
+git push --tags #sube los cambios al branch remoto (github)    
+```
+
+Llego la hora de convetir el psd a html y css. En el siguiente link pueden descargar los assets necesarios para el sprint-4 ( PSD, wireframe, libro " Scalable and Modular Architecture for CSS" ) [download](https://drive.google.com/folderview?id=0B08r1h3RbqoEdC12NVdjYl80SHc&usp=sharing).
+
+#### Tareas 
+- convertir psd a html y css (sin utilizar ningun framework de css, bootstrap, foundation, etc.., algo como skeleton o algun otro framework que solo sea el cascaron estaria bien. ej: [skeleton](http://www.getskeleton.com/) tambien esta dispobile en scss y sass via bower ``` bower install skeleton-sass ``` ).
+- usar html5.
+- responsive ( que tenga como minimo 3 breaks)
+ - Desktops
+ - Tablets 
+ - Phones  
+- deberan usar compass para generar los sprites.
+- podran utilizar los mixins de compass (esquinas redondeadas, shadows, etc..).
+
+Cualquier duda, consulta o queja estamos a la orden -).
