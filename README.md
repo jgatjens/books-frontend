@@ -4,7 +4,7 @@ Book's App
 Book es una aplicación HTML5 que nos permetiria:
 
   - obtener bases solidas de Javascript
-  - pasar psds a html y css
+  - Aprender a convertir un psd a html y css
   - trabajar con flujos reales
   - usar la metodologia agile para el proceso de desarrollo
   - optimización del proceso de desarrollo, calidad y producion (gruntjs)
