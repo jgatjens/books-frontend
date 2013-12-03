@@ -1,6 +1,10 @@
 // @import "normalize";
 
 /* 
+	
+	dependencias 
+	$ gem install compass
+
 	Compass sprite ejemplo.
 	La configuracion de compass se puede encontrar en el archivo
 	de Grunt (Gruntfile) en la seccion compass.options.
@@ -9,7 +13,6 @@
 	https://github.com/gruntjs/grunt-contrib-compass
 
 */
-
 @import "sprites";
 
 body {

@@ -68,7 +68,7 @@ module.exports = function(grunt) {
             imagesDir: 'img',
             javascriptsDir: 'js',
             fontsDir: 'css/fonts',
-            importPath: 'js/vendor',
+            importPath: 'js',
             httpImagesPath: '/img',
             httpGeneratedImagesPath: '/img',
             httpFontsPath: '/css/fonts',
