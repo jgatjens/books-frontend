@@ -7,21 +7,44 @@
 		margin-bottom: @grid-gutter-width;
 
 		> div {
-			// box shadow
-			// .box-shadow(0px 2px 2px 0px rgba(0,0,0,.175));
 			border: 1px solid #eaedf1;
 			padding: 20px 20px 0 20px;
 			border-radius: 2px;
 		 
-			h2 {
-				font-weight: lighter;
-			}
+			h2 { font-weight: lighter; }
 		}
-		img {
-			width: 100%;
-		}
+		img { width: 100%; }
 	}
 	
+	// Grid-list
+
+	&.grid-list {
+		
+		.col-lg-4, 
+		.col-md-4, 
+		.col-sm-6 {
+			width: 100%;
+			img {
+				float: left;
+				width: 200px;
+				padding-right: @grid-gutter-width;
+			}
+		}
+		.book-item > div {
+			float: left;
+			display: block;
+			width: 100%;
+			padding-bottom: @grid-gutter-width / 2;
+		
+			h2, p {
+				text-align: left;
+				margin-left: @grid-gutter-width / 2;
+			}
+		}
+		.btn-book {
+			clear: left;
+		}
+	}	
 }
 
 .btn-book {
@@ -33,14 +56,10 @@
 	padding: 15px 20px;
 	border-radius: 0;
 
-	.glyphicon-user {
-		margin-right: 20px;
-	}
+	.glyphicon-user { margin-right: 20px; }
 	.glyphicon-book {
 		float: right;
-		&.disable {
-			color: black;
-		}
+		&.disable { color: black;}
 	}
 
 	&:hover {
