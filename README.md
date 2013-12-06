@@ -24,6 +24,7 @@ Estas son las tecnologias que usaremos:
 * [Gruntjs] - organizador de tareas 
 * [Bower]   - manejador de dependencias frontend 
 * [Sass]    - pre compilador de css
+* [Less]    - pre compilador de css
 * [jQuery]  - duh 
 
 [Tech doc link](https://drive.google.com/file/d/0B08r1h3RbqoEUjhZUzk5QWVscW8/edit?usp=sharing) 

@@ -81,28 +81,20 @@ module.exports = function(grunt) {
             }
         }
     },
-    less: {
-      dev: {
-        options: {
-          paths: ["img"]
-        },
-        files: {
-          "css/style.css": "less/style.less"
-        }
+    less: {  
+      options: {
+        paths: ["img"],
+        files: { "css/style.css": "less/style.less" }
       },
-      prod: {
-        options: {
-          paths: ["img"],
-          cleancss: true
-        },
-        files: {
-          "css/style.css": "less/style.less"
-        }
+      server: {
+          options: {
+            debugInfo: false
+          }
       }
     },
     concurrent: {
         compass: ['compass:server'],
-        less: ['less:dev']
+        less: ['less:server']
     }
   });
 
