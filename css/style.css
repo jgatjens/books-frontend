@@ -2768,8 +2768,8 @@ fieldset[disabled] .btn-danger.active {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/bower_components\/bootstrap\/less\/buttons\.less}line{font-family:\0000370}}
 .btn-success {
   color: #ffffff;
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #1fbb86;
+  border-color: #1ba576;
 }
 /* line 468, /Users/jairog/DEV/www/work/hangar/books/frontend/bower_components/bootstrap/less/mixins.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/bower_components\/bootstrap\/less\/mixins\.less}line{font-family:\00003468}}
@@ -2779,8 +2779,8 @@ fieldset[disabled] .btn-danger.active {
 .btn-success.active,
 .open .dropdown-toggle.btn-success {
   color: #ffffff;
-  background-color: #47a447;
-  border-color: #398439;
+  background-color: #19986d;
+  border-color: #137151;
 }
 /* line 477, /Users/jairog/DEV/www/work/hangar/books/frontend/bower_components/bootstrap/less/mixins.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/bower_components\/bootstrap\/less\/mixins\.less}line{font-family:\00003477}}
@@ -2806,8 +2806,8 @@ fieldset[disabled] .btn-success:active,
 .btn-success.disabled.active,
 .btn-success[disabled].active,
 fieldset[disabled] .btn-success.active {
-  background-color: #5cb85c;
-  border-color: #4cae4c;
+  background-color: #1fbb86;
+  border-color: #1ba576;
 }
 /* line 74, /Users/jairog/DEV/www/work/hangar/books/frontend/bower_components/bootstrap/less/buttons.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/bower_components\/bootstrap\/less\/buttons\.less}line{font-family:\0000374}}
@@ -5400,6 +5400,35 @@ input[type="button"].btn-block {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/navbar\.less}line{font-family:\0000346}}
 #login form {
   margin-top: 9px;
+}
+@media (max-width: 767px) {
+  /* line 53, /Users/jairog/DEV/www/work/hangar/books/frontend/less/navbar.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/navbar\.less}line{font-family:\0000353}}
+  .navbar-header {
+    float: left;
+  }
+  /* line 56, /Users/jairog/DEV/www/work/hangar/books/frontend/less/navbar.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/navbar\.less}line{font-family:\0000356}}
+  .navbar-right {
+    float: right !important;
+  }
+  /* line 59, /Users/jairog/DEV/www/work/hangar/books/frontend/less/navbar.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/navbar\.less}line{font-family:\0000359}}
+  .navbar-nav > li {
+    float: left;
+  }
+  /* line 62, /Users/jairog/DEV/www/work/hangar/books/frontend/less/navbar.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/navbar\.less}line{font-family:\0000362}}
+  .navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
 }
 /* line 2, /Users/jairog/DEV/www/work/hangar/books/frontend/less/books.less */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jairog\/DEV\/www\/work\/hangar\/books\/frontend\/less\/books\.less}line{font-family:\000032}}
