@@ -1,0 +1,67 @@
+
+// Google Fonts
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+// Core variables and mixins
+@import "../bower_components/bootstrap/less/variables.less";
+
+// Iconography
+// -------------------------
+
+@icon-font-path: "../bower_components/bootstrap/fonts/";
+
+// Typography
+// -------------------------
+@font-family-base: lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+@navbar-height:                    45px;
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
+
+
+// @navbar-default-color:             #f1f1f3;
+@navbar-default-bg:                #323a45;
+@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+
+
+// Inverted navbar
+//
+// Reset inverted navbar basics
+@navbar-inverse-color:                      #f1f1f3;
+@navbar-inverse-bg:                         #323a45;
+@navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color:                @navbar-inverse-color;
+@navbar-inverse-link-hover-color:          @navbar-inverse-bg;
+@navbar-inverse-link-active-bg:            white;
+@navbar-inverse-link-hover-bg:             white;
+
+
+
+// Pagination
+// -------------------------
+
+@pagination-border:                    none;
+
+@pagination-hover-bg:                  @gray-lighter;
+
+@pagination-active-bg:                 @brand-primary;
+@pagination-active-color:              #fff;
+
+@pagination-disabled-color:            @gray-light;
+
+
+// Forms
+// -------------------------
+
+@input-bg:                       #fafafa;
+@input-bg-disabled:              @gray-lighter;
+
+@input-color:                    @gray;
+@input-border:                   #ccc;
+@input-border-radius:            0;
+@input-border-focus:             #ebebeb;

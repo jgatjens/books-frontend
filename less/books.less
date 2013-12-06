@@ -1,0 +1,50 @@
+
+.books {
+	background-color: #f9fafc;
+
+	.book-item {
+		text-align: center;
+		margin-bottom: @grid-gutter-width;
+
+		> div {
+			// box shadow
+			// .box-shadow(0px 2px 2px 0px rgba(0,0,0,.175));
+			border: 1px solid #eaedf1;
+			padding: 20px 20px 0 20px;
+			border-radius: 2px;
+		 
+			h2 {
+				font-weight: lighter;
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	
+}
+
+.btn-book {
+	background-color: #1fbb86;
+	font-size: @font-size-large;
+	color: white;
+	text-align: left;
+	display: block;
+	padding: 15px 20px;
+	border-radius: 0;
+
+	.glyphicon-user {
+		margin-right: 20px;
+	}
+	.glyphicon-book {
+		float: right;
+		&.disable {
+			color: black;
+		}
+	}
+
+	&:hover {
+		background-color: #e1e1e1;
+		color: #898989;
+	}
+}

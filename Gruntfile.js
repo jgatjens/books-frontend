@@ -34,6 +34,8 @@ module.exports = function(grunt) {
                 '<%= config.app %>/*.html',
                 'css/{,*/}*.css',
                 '<%= config.app %>/js/{,*/}*.js',
+                '<%= config.app %>/aura_components/{,*/}*.js',
+                '<%= config.app %>/aura_components/{,*/}*.hbs',
                 '<%= config.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             ]
         }
@@ -81,20 +83,31 @@ module.exports = function(grunt) {
             }
         }
     },
-    less: {  
-      options: {
-        paths: ["img"],
-        files: { "css/style.css": "less/style.less" }
+    less: {
+      dev: {
+        options: {
+          paths: ["img"],
+          dumpLineNumbers: "all",
+          debugInfo: false
+        },
+        files: {
+          "css/style.css": "less/style.less"
+        }
       },
-      server: {
-          options: {
-            debugInfo: false
-          }
+      prod: {
+        options: {
+          paths: ["img"],
+          cleancss: true,
+          debugInfo: false
+        },
+        files: {
+          "css/style.css": "less/style.less"
+        }
       }
     },
     concurrent: {
         compass: ['compass:server'],
-        less: ['less:server']
+        less: ['less:dev']
     }
   });
 
