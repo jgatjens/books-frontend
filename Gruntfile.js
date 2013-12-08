@@ -33,8 +33,9 @@ module.exports = function(grunt) {
             files: [
                 '<%= config.app %>/*.html',
                 'css/{,*/}*.css',
-                '<%= config.app %>/js/{,*/}*.js',
+                // '<%= config.app %>/js/{,*/}*.js',
                 '<%= config.app %>/aura_components/{,*/}*.js',
+                '<%= config.app %>/aura_extensions/{,*/}*.js',
                 '<%= config.app %>/aura_components/{,*/}*.hbs',
                 '<%= config.app %>/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
             ]
@@ -68,9 +69,9 @@ module.exports = function(grunt) {
             cssDir: 'css',
             generatedImagesDir: 'img',
             imagesDir: 'img',
-            javascriptsDir: 'js',
+            // javascriptsDir: 'js',
             fontsDir: 'css/fonts',
-            importPath: 'js',
+            // importPath: 'js',
             httpImagesPath: '/img',
             httpGeneratedImagesPath: '/img',
             httpFontsPath: '/css/fonts',
