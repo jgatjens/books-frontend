@@ -88,7 +88,7 @@ Cualquier duda, consulta o queja estamos a la orden -).
 Antes de empezar con los demas objetivos deberan crear un tag en el repositorio llamado "sprint-1" ej:
 ```sh
 git tag sprint-1 -m 'comment'
-git push --tags #sube los cambios al branch remoto (github)    
+git push --tags #sube los tags al branch remoto (github)    
 ```
 Esto con el fin de poder devolverse al codigo con facilidad para hacer code reviews
 
