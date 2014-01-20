@@ -83,8 +83,8 @@ grunt server
 
 Cualquier duda, consulta o queja estamos a la orden -).
 
-<!--
-## Frontend - Sprint 2 ( viernes 08 de Noviembre ) 
+
+## Frontend - Sprint 2 ( martes 21 de Enero ) 
 Antes de empezar con los demas objetivos deberan crear un tag en el repositorio llamado "sprint-1" ej:
 ```sh
 git tag sprint-1 -m 'comment'
@@ -99,9 +99,9 @@ Lo que se espera para este sprint es que investiguen acerca de los frameworks pa
 #### Tareas 
 - crear git tag.
 - crear una tarea de grunt para correr los test.
-- crear minimo 5 ejemplos con el framework escogido.
+- crear minimo 3 escenarios con el framework escogido.
 
-
+<!--
 ## Frontend - Sprint 3 ( viernes 22 de Noviembre ) 
 
 Suponiendo que hayan jugado con algun framework de testing antes de empezar con este sprint deberan crear un tag en el repositorio llamado "sprint-2" ej:
