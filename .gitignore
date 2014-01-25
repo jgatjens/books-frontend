@@ -3,3 +3,6 @@ node_modules
 js/vendor
 doc
 .sass-cache
+npm-debug.log
+bower_components
+styles.css
