@@ -10,11 +10,10 @@ var mountFolder = function (connect, dir) {
 module.exports = function(grunt) {
 
   // show elapsed time at the end
-  // require('time-grunt')(grunt);
+  require('time-grunt')(grunt);
   // load all grunt tasks
 
-  // require('load-grunt-tasks')(grunt);
-
+  require('load-grunt-tasks')(grunt);
 
   var config = {
     app:  'app',
@@ -64,6 +63,15 @@ module.exports = function(grunt) {
               }
           }
       },
+      dist: {
+        options: {
+          middleware: function (connect) {
+            return [
+                mountFolder(connect, config.dist)
+            ];
+          }
+        }
+      },
       test: {
           options: {
               middleware: function (connect) {
@@ -86,21 +94,59 @@ module.exports = function(grunt) {
     concat: {
       options: {
         stripBanners: true,
+        // separator: ';',
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-          '<%= grunt.template.today("yyyy-mm-dd") %> */',
+          '<%= grunt.template.today("yyyy-mm-dd") %> */ ',
       },
       dist: {
-        src: ['<%= config.app %>/js/*.js'],
+        src: [
+          // vendors libs
+          '<%= config.app %>/bower_components/jquery/jquery.js',
+          // books
+          '<%= config.app %>/js/app.conf.js',
+          '<%= config.app %>/js/models/model-books.js',
+          '<%= config.app %>/js/app.js'
+        ],
         dest: '<%= config.dist %>/js/app.min.js'
       }
     },
-    clean: ["<%= config.dist %>/js/app.min.js"],
+    useminPrepare: {
+      options: {
+          dest: '<%= config.dist %>'
+      },
+      html: '<%= config.dist %>/index.html'
+    },
+    usemin: {
+        options: {
+            dirs: ['<%= config.dist %>']
+        },
+        html: '<%= config.dist %>/index.html'
+    },
+    clean: {
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= config.dist %>/*',
+            '<%= config.dist %>',
+            '!<%= config.dist %>/.git*'
+          ]
+        }]
+      }
+    },
     jshint: {
       dev: {
         options: {
           "jshintrc": true
         },
-        src: ['js/*.js']
+        src: ['<%= config.app %>/js/*.js']
+      }
+    },
+    uglify: {
+      dist: {
+        files: {
+          '<%= config.dist %>/js/app.min.js': ['<%= config.dist %>/js/app.min.js']
+        }
       }
     },
     copy: {
@@ -111,9 +157,9 @@ module.exports = function(grunt) {
           cwd: '<%= config.app %>',
           dest: '<%= config.dist %>',
           src: [
-              '*.{ico,txt, md}',
-              'css/**',
-              'img/{,*/}*.{webp,gif}'
+              '*.{ico,txt,md}',
+              'index.html',
+              'img/{,*/}*.{webp,gif,png,jpg}'
           ]
         }]
       }
@@ -136,38 +182,62 @@ module.exports = function(grunt) {
             options: {
                 debugInfo: true
             }
+        },
+        dist: {
+            options: {
+              sassDir: '<%= config.app %>/scss',
+              cssDir: '<%= config.dist %>/css',
+              outputStyle: "compressed",
+              noLineComments: true,
+              generatedImagesDir: '<%= config.dist %>/img',
+              imagesDir: '<%= config.dist %>/img',
+              javascriptsDir: '<%= config.dist %>/js',
+              fontsDir: '<%= config.dist %>/css/fonts',
+              importPath: '<%= config.dist %>/js',
+              httpImagesPath: '<%= config.dist %>/img',
+              httpGeneratedImagesPath: '<%= config.dist %>/img',
+              httpFontsPath: '<%= config.dist %>/css/fonts',
+              relativeAssets: false
+          },
         }
     },
     concurrent: {
-        server: ['compass:server']
+        server: ['compass:server'],
+        dist: ['compass:dist']
     }
   });
 
 
-  // These plugins provide necessary tasks.
-  grunt.loadNpmTasks('grunt-contrib-compass');
-  grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-clean');
-  grunt.loadNpmTasks('grunt-concurrent');
-  grunt.loadNpmTasks("grunt-open");
 
-
+  // server task
   grunt.registerTask('server', function (target) {
-    grunt.task.run([
-      // 'clean:server',
-      // 'autoprefixer',
-      'jshint',
-      'concurrent:server',
-      'connect:livereload',
-      'open:server',
-      'watch'
-    ]);
+
+      if (target === 'dist') {
+          return grunt.task.run(['build', 'open:server', 'connect:dist:keepalive']);
+      }
+
+      grunt.task.run([
+        'jshint',
+        'concurrent:server',
+        'connect:livereload',
+        'open:server',
+        'watch'
+      ]);
+
   });
 
-  // Default task.
+  // Build task.
+  grunt.registerTask('build', [
+    'clean:dist',
+    'copy:dist',
+    'concat',
+    'uglify',
+    'concurrent:dist',
+    'usemin'
+  ]);
+
+
+
   // grunt.registerTask('default', ['concurrent:server', 'connect:livereload', 'open', 'watch']);
   grunt.registerTask('test', ['open:test', 'connect:test:keepalive',]);
 

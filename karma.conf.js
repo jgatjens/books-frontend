@@ -19,10 +19,11 @@ module.exports = function(config) {
         // {pattern: 'src/**/*.js', included: false},
         // {pattern: 'test/**/*Spec.js', included: false}
 
-        'app/bower_components/jquery/jquery.js',  
+        'app/bower_components/jquery/jquery.js',
         'app/js/app.conf.js',
         'app/js/models/*.js',
-        // 'test/**/*.spec.js'
+
+        // tests
         'test/spec/models/*.spec.js'
     ],
 

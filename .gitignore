@@ -1,8 +1,9 @@
 node_modules
 .DS_Store
-js/vendor
 doc
 .sass-cache
 npm-debug.log
 bower_components
 styles.css
+img/sprite-*
+
