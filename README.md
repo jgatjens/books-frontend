@@ -42,7 +42,7 @@ Estas son las tecnologías a escoger:
 Assets
 -----------
 
-(link)[https://drive.google.com/open?id=0B08r1h3RbqoEdC12NVdjYl80SHc]
+[link](https://drive.google.com/open?id=0B08r1h3RbqoEdC12NVdjYl80SHc)
 
 ## Frontend - Sprint 1
 
