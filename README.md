@@ -42,7 +42,7 @@ Estas son las tecnologías a escoger:
 Assets 
 -----------
 
-El diseño del sitio se ha echo en google material design con Sketch APP. En el siguiente [link](https://drive.google.com/open?id=0B08r1h3RbqoEdC12NVdjYl80SHc) podran encontrar un archivo de sketch y un wireframe que explica las funcionalidades basicas del app. 
+El diseño del app se ha echo con [Sketch](http://bohemiancoding.com/sketch/). En el siguiente [link](https://drive.google.com/open?id=0B08r1h3RbqoEdC12NVdjYl80SHc) podran encontrar un archivo de sketch y un wireframe que explica las funcionalidades basicas del app. 
 
 
 ## Frontend - Sprint 1
