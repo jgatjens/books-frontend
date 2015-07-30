@@ -39,6 +39,10 @@ Estas son las tecnologías a escoger:
 * Localstorage (session user)
 * Etc..
 
+Assets
+-----------
+
+(link)[https://drive.google.com/open?id=0B08r1h3RbqoEdC12NVdjYl80SHc]
 
 ## Frontend - Sprint 1
 
